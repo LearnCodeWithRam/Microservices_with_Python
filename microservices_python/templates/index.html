@@ -1,0 +1,66 @@
+
+<html>
+<head>
+    <style>
+        body{
+            
+            background-color: #cccccc;
+          }
+    input[type=url], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    
+<h2 >Auto Extraction of Data From Static Website's Url.</h2>
+
+<div>
+    <form name="myForm"   action="/receiveFormData"   method='post'>
+    <label for="name">Enter a Valid Url like:-https://example.com</label>
+    <input type="url" 
+  name="url"
+  id="url"
+  placeholder="https://example.com"
+  pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?"
+  required/>
+
+    <input type="submit"  name="Submit" value="Submit">
+
+    
+  </form>
+</div>
+    
+<p>Click "Submit", Button to Fetch All Contents Of Url.</p>
+
+  
+</body>
+</html>

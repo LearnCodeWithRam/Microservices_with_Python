@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>extract_data</title>
+</head>
+<body>
+
+<p text-alighn="center" >Here are all words with its Fequancy</p>
+
+
+{% block body %}
+<ul>
+    {% for item in data %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+    
+</body>
+</html>
